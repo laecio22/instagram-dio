@@ -66,6 +66,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     min-height: 28rem;
+    margin-top: 5rem;
 }
 
 .container-image-user{
@@ -88,6 +89,11 @@ body{
     color: var(--white-primary);
     border: 1px solid var(--blue-primary);
     border-radius: 15px;
+    cursor: pointer;
+}
+
+.link-delete-account{
+    color: var(--blue-primary);
 }
 
 .account{
@@ -99,6 +105,7 @@ body{
     justify-content: space-between;
 }
 
+
 .links-group{
     display: flex;
     justify-content: space-around;
@@ -107,4 +114,28 @@ body{
 
 .link-blue{
     color: var(--blue-primary);
+}
+
+.container-get-app{
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8rem;
+}
+
+.get-app{
+    font-size: 1.2rem;
+}
+
+.download{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.download a img{
+    height: 3rem;
 }
