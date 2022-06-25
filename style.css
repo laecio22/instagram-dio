@@ -1,6 +1,6 @@
 :root{
     --blue-primary:#0095f6;
-    --gray-primary:#c4dae4;
+    --gray-primary:#d6d8da;
     --white-primary:#fff;
 
 }
@@ -96,13 +96,18 @@ body{
     color: var(--blue-primary);
 }
 
-.account{
+.container-account{
     width: 100%;
     height: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.not-container-account {
+    color: var(--gray-primary);
+    cursor: pointer;
 }
 
 
@@ -127,6 +132,7 @@ body{
 
 .get-app{
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .download{
@@ -138,4 +144,31 @@ body{
 
 .download a img{
     height: 3rem;
+}
+
+/* media responsiva */
+
+@media screen and (max-width:1024px) {
+    .instagram-container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) { 
+    
+    .instagram-container{
+        justify-content: space-around;
+    }
+
+    .box-instagram-image{
+         display: none;
+    }
+
+    .group:nth-child(1){
+        margin: 0;
+    }
+
+    .box-instagram-login{
+        width: 80%;
+    }
 }
